@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		app:cardBackgroundColor="@android:color/transparent"
+		app:cardElevation="0dp"
+		app:cardPreventCornerOverlap="true">
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+		<com.android.volley.toolbox.NetworkImageView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/product_image"
+				android:background="?attr/colorPrimaryDark"
+				android:scaleType="centerCrop"/>
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="16dp">
+			<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/product_title"
+					android:text="@string/product_title"
+					android:textAlignment="center"
+					android:textAppearance="?attr/textAppearanceSubtitle2"/>
+
+			<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/product_price"
+					android:text="@string/product_description"
+					android:textAlignment="center"
+					android:textAppearance="?attr/textAppearanceBody2"/>
+
+		</LinearLayout>
+	</LinearLayout>
+</android.support.design.card.MaterialCardView>
