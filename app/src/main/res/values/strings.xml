@@ -7,6 +7,10 @@
     <string name="error_password">Password must contain at least 8 characters.</string>
     <string name="product_title">Title</string>
     <string name="product_description">Secondary text</string>
+    <string name="shr_search_title">Search</string>
+    <string name="shr_filter_title">Filter</string>
+    <string name="shr_product_title">Product</string>
+    <string name="shr_product_description">Secondary text</string>
 
     // Shrine backdrop menu labels
     <string name="featured_label">Featured</string>

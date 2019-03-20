@@ -8,11 +8,11 @@ import com.kusumi.katsumi.myshrineapp.Interface.NavigationHost
 import com.kusumi.katsumi.myshrineapp.R
 
 class MainActivity : AppCompatActivity(), NavigationHost {
-
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        
         if (savedInstanceState == null) {
             supportFragmentManager
                 .beginTransaction()
@@ -20,16 +20,16 @@ class MainActivity : AppCompatActivity(), NavigationHost {
                 .commit()
         }
     }
-
+    
     override fun navigateTo(fragment: Fragment, addToBackstack: Boolean) {
         val transaction = supportFragmentManager
             .beginTransaction()
             .replace(R.id.container, fragment)
-
+        
         if (addToBackstack) {
             transaction.addToBackStack(null)
         }
-
+        
         transaction.commit()
     }
 }

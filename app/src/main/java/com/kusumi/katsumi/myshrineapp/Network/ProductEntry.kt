@@ -13,7 +13,7 @@ class ProductEntry(
 	
 	companion object {
 		/**
-		 *
+		 * A product entry in the list of products.
 		 */
 		fun initProductEntryList(resources: Resources): List<ProductEntry> {
 			val inputStream = resources.openRawResource(R.raw.products)
